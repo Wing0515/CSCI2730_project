@@ -7,7 +7,7 @@ import Section from './components/Section'
 import Product from './components/Product'
 
 // ABIs
-import CUHKon from './abis/Cuhkon.json'
+import CUHKon from './abis/CUHKon.json'
 
 // Config
 import config from './config.json'
@@ -20,7 +20,7 @@ function App() {
 
   const [electronics, setElectronics] = useState(null)
   const [clothing, setClothing] = useState(null)
-  const [toys, setToys] = useState(null)
+  const [game, setGame] = useState(null)
   const [cuhk, setCuhk] = useState(null)
 
   const [item, setItem] = useState({})
@@ -43,19 +43,19 @@ function App() {
 
     const items = []
 
-    for (var i = 0; i < 14; i++) {
+    for (var i = 0; i < 15; i++) {
       const item = await cuhkon.items(i + 1)
       items.push(item)
     }
 
     const electronics = items.filter((item) => item.category === 'electronics')
     const clothing = items.filter((item) => item.category === 'clothing')
-    const toys = items.filter((item) => item.category === 'toys')
+    const game = items.filter((item) => item.category === 'game')
     const cuhk = items.filter((item) => item.category === 'cuhk')
 
     setElectronics(electronics)
     setClothing(clothing)
-    setToys(toys)
+    setGame(game)
     setCuhk(cuhk)
   }
 
@@ -69,12 +69,12 @@ function App() {
 
       <h2>CUHKon Best Sellers</h2>
 
-      {electronics && clothing && toys && cuhk && (
+      {electronics && clothing && game && cuhk && (
         <>
           <Section title={"CUHK Merchandise"} items={cuhk} togglePop={togglePop} />
           <Section title={"Clothing & Jewelry"} items={clothing} togglePop={togglePop} />
           <Section title={"Electronics & Gadgets"} items={electronics} togglePop={togglePop} />
-          <Section title={"Toys & Gaming"} items={toys} togglePop={togglePop} />
+          <Section title={"Gaming"} items={game} togglePop={togglePop} />
         </>
       )}
 
