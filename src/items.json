@@ -65,6 +65,33 @@
     },
     {
       "id": 8,
+      "name": "Puzzle Cube",
+      "category": "toys",
+      "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/cube.jpg",
+      "price": "0.05",
+      "rating": 4,
+      "stock": 15
+    },
+    {
+      "id": 9,
+      "name": "Train Set",
+      "category": "toys",
+      "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/train.jpg",
+      "price": "0.20",
+      "rating": 4,
+      "stock": 0
+    },
+    {
+      "id": 10,
+      "name": "Robot Set",
+      "category": "toys",
+      "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/robots.jpg",
+      "price": "0.15",
+      "rating": 3,
+      "stock": 12
+    },
+    {
+      "id": 11,
       "name": "PlayStation 5",
       "category": "game",
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
@@ -73,7 +100,7 @@
       "stock": 0
     },
     {
-      "id": 9,
+      "id": 12,
       "name": "Nintendo Switch",
       "category": "game",
       "image": "https://m.price.com.hk/space/product/249000/249810_se4vig_0.jpg",
@@ -82,7 +109,7 @@
       "stock": 12
     },
     {
-      "id": 11,
+      "id": 13,
       "name": "CUHK SCHOOL BUS",
       "category": "cuhk",
       "image": "https://www.cpr.cuhk.edu.hk/wp-content/uploads/resource/souvenirs/ISQ_4921-aspect-ratio-4-3.jpg",
@@ -91,7 +118,7 @@
       "stock": 10
     },
     {
-      "id": 12,
+      "id": 14,
       "name": "Cotton Bag",
       "category": "cuhk",
       "image": "https://www.cpr.cuhk.edu.hk/wp-content/uploads/resource/souvenirs/Cotton-Bag.jpg",
@@ -100,7 +127,7 @@
       "stock": 10
     },
     {
-      "id": 13,
+      "id": 15,
       "name": "CUHK pen",
       "category": "cuhk",
       "image": "https://www.cpr.cuhk.edu.hk/wp-content/uploads/ISQ_7301-1-aspect-ratio-4-3.jpg",

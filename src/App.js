@@ -20,8 +20,9 @@ function App() {
 
   const [electronics, setElectronics] = useState(null)
   const [clothing, setClothing] = useState(null)
-  const [game, setGame] = useState(null)
+  const [toys, setToys] = useState(null)
   const [cuhk, setCuhk] = useState(null)
+  const [game, setGame] = useState(null)
 
   const [item, setItem] = useState({})
   const [toggle, setToggle] = useState(false)
@@ -50,13 +51,15 @@ function App() {
 
     const electronics = items.filter((item) => item.category === 'electronics')
     const clothing = items.filter((item) => item.category === 'clothing')
-    const game = items.filter((item) => item.category === 'game')
+    const toys = items.filter((item) => item.category === 'toys')
     const cuhk = items.filter((item) => item.category === 'cuhk')
+    const game = items.filter((item) => item.category === 'game')
 
     setElectronics(electronics)
     setClothing(clothing)
-    setGame(game)
+    setToys(toys)
     setCuhk(cuhk)
+    setGame(game)
   }
 
   useEffect(() => {
@@ -69,12 +72,13 @@ function App() {
 
       <h2>CUHKon Best Sellers</h2>
 
-      {electronics && clothing && game && cuhk && (
+      {electronics && clothing && toys && cuhk && game && (
         <>
           <Section title={"CUHK Merchandise"} items={cuhk} togglePop={togglePop} />
+          <Section title={"Gaming"} items={game} togglePop={togglePop} />
           <Section title={"Clothing & Jewelry"} items={clothing} togglePop={togglePop} />
           <Section title={"Electronics & Gadgets"} items={electronics} togglePop={togglePop} />
-          <Section title={"Gaming"} items={game} togglePop={togglePop} />
+          <Section title={"Toys & Gaming"} items={toys} togglePop={togglePop} />
         </>
       )}
 
