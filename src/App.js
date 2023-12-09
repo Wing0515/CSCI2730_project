@@ -9,7 +9,6 @@ import Product from './components/Product'
 // ABIs
 import CUHKon from './abis/CUHKon.json'
 
-// Config
 import config from './config.json'
 
 function App() {

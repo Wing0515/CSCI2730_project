@@ -37,6 +37,7 @@ const Navigation = ({ account, setAccount }) => {
 
             <ul className='nav__links'>
                 <li><a href="#CUHK Merchandise">CUHK Merchandise</a></li>
+                <li><a href="#Gaming">Gaming</a></li>
                 <li><a href="#Clothing & Jewelry">Clothing & Jewelry</a></li>
                 <li><a href="#Electronics & Gadgets">Electronics & Gadgets</a></li>
                 <li><a href="#Toys & Gaming">Toys & Gaming</a></li>
